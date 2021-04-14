@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title> Homepage - Manager | BlogSite Manager</title>
+    <link rel="stylesheet" href="stylesheet/homepage-view.css">
+    <meta name="viewport" content="width=divice-width, inital-sclae=1.0">
+</head>
+
+<body>
+    <div class="container">
+        <div class="top-bar">
+            <ul class="nav-bar" role="navigation">
+                <li class="logo-name"><a href="manager.html">BlogSite-Manager</a></li>
+            </ul>
+        </div>
+        <div class="guide-bar">
+            <ul class="gud-bar" role="navigation">
+                <li class="tools"><p>Tools</p></li>
+                <li class="results"><p>Results</p></li>
+            </ul>
+        </div>
+        <div class="wrapper">
+            <div class="left">
+                <div class="left-middle-up">
+                    <p class="general-heading">Basic Tools</p>
+                    <div class="view-list">
+                        <button type="button" class="view-btn"> Reset </button>
+                        <button type="button" class="view-btn"> Basic Data </button>
+                        <button type="button" class="view-btn"> Show all Customer</button><br>
+                    </div>
+
+                    <div class="show-by-filter">
+
+                        <p class="general-heading">Show-by-filter</p>
+
+                        <div class="dp-type">
+                            <label class="general-sub-heading">Type: </label>
+                            <div class="dp-type-select">
+                                <select>
+                                    <option value="0">Select customer type:</option>
+                                    <option value="1">FreeTrail</option>
+                                    <option value="2">Lite</option>
+                                    <option value="3">Basic</option>
+                                    <option value="4">Premium</option>
+                                    <option value="5">Enterprise</option>
+                                </select>
+                                <button type="submit" class="type-select-btn"> show </button>
+                            </div>
+
+                            <label class="general-sub-heading">Location: </label>
+                            <div class="dp-type-select">
+                                <select>
+                                    <option value="0">Select location:</option>
+                                    <option value="1">Canada</option>
+                                    <option value="2">United States</option>
+                                    <option value="3">Japan</option>
+                                    <option value="4">United Kingdom</option>
+                                    <option value="5"> Netherlands </option>
+                                </select>
+                                <button type="submit" class="type-select-btn"> show </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="left-middle-bottom">
+
+                    <label class="general-heading">General Search</label>
+
+                    <div class="search-related">
+                        <input type="text" placeholder="Username" name="username" class="search-box">
+                        <button type="submit" class="search-btn">Search</button>
+                    </div>
+
+                    <label class="general-heading"> Advanced Search:</label>
+
+                    <label class="general-sub-heading">Search by Customer ID:</label>
+                    <div class="search-related">
+                        <input type="text" placeholder="Customer ID" name="username" class="search-box">
+                        <button type="submit" class="search-btn">Search</button>
+                    </div>
+
+                    <label class="general-sub-heading">Search by Post Title:</label>
+                    <div class="search-related">
+                        <input type="text" placeholder="Post Title" name="username" class="search-box">
+                        <button type="submit" class="search-btn">Search</button>
+                    </div>
+
+                    <label class="general-sub-heading">Search by Account ID:</label>
+                    <div class="search-related">
+                        <input type="text" placeholder="Account ID" name="username" class="search-box">
+                        <button type="submit" class="search-btn">Search</button>
+                    </div>
+                </div>
+
+                <div class="left-bottom">
+
+                    <label class="general-heading">
+                        Edit Customer Info:
+                    </label>
+
+                    <label class="general-sub-heading"> Enter customer id </label>
+                    <div class="edit">
+                        <input type="text" placeholder="customer id" name="customerid" id="usrid-box">
+                        <button type="submit" class="search-btn">Confirm</button>
+                    </div>
+
+                    <label class="general-sub-heading"> Edit customer name </label>
+                    <div class="edit">
+                        <input type="text" placeholder="new name" name="username">
+                        <button type="submit" class="search-btn">Submit</button>
+                    </div>
+
+                    <label class="general-sub-heading"> Edit customer location </label>
+                    <div class="edit">
+                        <input type="text" placeholder="new location" name="location">
+                        <button type="submit" class="search-btn">Submit</button>
+                    </div>
+
+                    <label class="general-sub-heading"> Edit customer type </label>
+                    <div class="edit">
+                        <input type="text" placeholder="new type" name="username">
+                        <button type="submit" class="search-btn">Submit</button>
+                    </div>
+
+                    <label class="general-heading">Delete this customer</label>
+                    <div class="delete">
+                        <button type="submit" class="search-btn">Delete</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="right">
+                <div class="right-mb">
+                    <div class="results">
+                        <p>
+                            Results.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- <script>
+        alert("If this is the first time you're running this web-app, please use reset first.")
+    </script> -->
+</body>
+
+</html>

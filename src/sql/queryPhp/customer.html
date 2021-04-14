@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title> Homepage - Customer | BlogSite Manager</title>
+    <link rel="stylesheet" href="stylesheet/homepage-view.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="top-bar">
+            <ul class="nav-bar" role="navigation">
+                <li class="logo-name"><a href="customer.html">BlogSite-Manager</a></li>
+            </ul>
+        </div>
+        <div class="guide-bar">
+            <ul class="gud-bar" role="navigation">
+                <li class="tools">
+                    <p>Tools</p>
+                </li>
+                <li class="results">
+                    <p>Results</p>
+                </li>
+            </ul>
+        </div>
+        <div class="wrapper">
+            <div class="left">
+                <div class="left-middle-up">
+                    <p class="general-heading">Basic Tools</p>
+                    <div class="view-list">
+
+                        <!-- reset the page tables -->
+                        <form id="PageRestForm" method="POST" action="Customer.php">
+                            <input type="hidden" id="resetTablesRequest" name="resetTablesRequest">
+                        </form>
+
+                        <!-- get the basic data -->
+                        <form id="BasicDataForm" method="GET" action="Customer.php">
+                            <input type="hidden" id="basicDataRequest" name="basicDataRequest">
+                        </form>
+
+                        <!-- get the basic data -->
+                        <form id="showAllAccountForm" method="GET" action="Customer.php">
+                            <input type="hidden" id="displayBlogAccountRequest" name="displayBlogAccountRequest">
+                        </form>
+
+                        <button type="button" form="PageRestForm" class="view-btn"> Reset </button>
+                        <button type="button" form="BasicDataForm" class="view-btn"> Basic Data </button>
+                        <button type="button" form="showAllAccountForm" class="view-btn"> Show all
+                            Accounts</button>
+                    </div>
+
+                    <div class="view-list">
+                        <input type="text" form="PageRestForm" placeholder="Username" name="username" id="username">
+                        <input type="text" form="BasicDataForm" placeholder="Username" name="username" id="username">
+                        <input type="text" form="showAllAccountForm" placeholder="Username" name="username" id="username">
+                    </div>
+
+                </div>
+
+                <div class="left-middle-bottom">
+                    <label class="general-heading">General Search</label>
+
+                    <div class="search-related">
+                        <form method="GET" action="Customer.php">
+                            <input type="hidden" id="showAllPostsByAccountRequest" name="showAllPostsByAccountRequest">
+                            <input type="text" placeholder="Username" name="username" class="search-box">
+                            <button type="submit" value="ShowAllPos" name="showPos" class="search-btn">Search</button>
+                        </form>
+                    </div>
+
+                    <label class="general-heading"> Advanced Search:</label>
+
+                    <label class="general-sub-heading">Search by Post ID:</label>
+                    <div class="search-related">
+                        <input type="text" placeholder="Post ID" name="username" class="search-box">
+                        <button type="submit" class="search-btn">Search</button>
+                    </div>
+
+                    <label class="general-sub-heading">Search by Post Title:</label>
+                    <div class="search-related">
+                        <input type="text" placeholder="Post Title" name="username" class="search-box">
+                        <button type="submit" class="search-btn">Search</button>
+                    </div>
+
+                    <label class="general-sub-heading">Search by Tag ID:</label>
+                    <div class="search-related">
+                        <input type="text" placeholder="Tag ID" name="username" class="search-box">
+                        <button type="submit" class="search-btn">Search</button>
+                    </div>
+
+                    <label class="general-sub-heading">Search by Tag Name:</label>
+                    <div class="search-related">
+                        <input type="text" placeholder="Tag Name" name="username" class="search-box">
+                        <button type="submit" class="search-btn">Search</button>
+                    </div>
+
+                </div>
+
+                <div class="left-bottom">
+                    <label class="general-heading">
+                        Edit Account Info:
+                    </label>
+
+                    <label class="general-sub-heading"> Enter Username </label>
+                    <div class="edit">
+                        <input type="text" placeholder="Username" name="username" id="usrid-box">
+                        <button type="submit" class="search-btn">Confirm</button>
+                    </div>
+
+
+                    <!-- Needed to be implement. -->
+                    <label class="general-sub-heading"> Edit account's Content </label>
+                    <div class="edit">
+                    <button type="submit" class="search-btn" style="width: 15em; margin-left: 4px;">
+                        Confirm </button>
+                    </div>
+
+                    <label class="general-sub-heading">Delete this account</label>
+                    <div class="delete">
+                        <button type="submit" class="search-btn">Delete</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="right">
+                <div class="right-mb">
+                    <div class="results">
+                        <p>
+                            Results.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+* {
+    font-family: "Crimson+Pro", "Arial", "serif";
+    margin: 0%;
+    padding: 0%;
+}
+
+.logo-and-name {
+    text-align: center;
+    margin-top: 30px;
+    color: rgb(29, 161, 242);
+}
+
+.greeting {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 15px;
+}
+
+.infos {
+    text-align: center;
+}
+
+.infos {
+    text-align: center;
+}
+
+.infos input {
+    width: 250px;
+    padding: 18px;
+    margin: 5px;
+    margin-top: 15px;
+    border-color: rgb(180, 183, 185);
+    border-style: solid;
+    border-radius: 6px;
+    outline-color: rgb(22, 146, 223);
+}
+
+.btn {
+    padding: 15px;
+    width: 290px;
+    margin: 5px 5px;
+    margin-top: 20px;
+    background-color: rgb(29, 161, 242);
+    color: white;
+    text-decoration-color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    opacity: 0.5;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+
+.signup {
+    padding: 10px;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+
+.signup {
+    padding: 10px;
+}
+
+.signup a {
+    text-decoration: none;
+    color: rgb(22, 146, 223);
+}
+
+.user-type {
+    margin-top: 10px;
+    text-align: center;
+    display: block;
+}
+
+.user-type label {
+    cursor: pointer;
+}
+
+.rdio {
+    cursor: pointer;
+}

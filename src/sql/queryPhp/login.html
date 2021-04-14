@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Log in | BlogSite Manager</title>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheet/login.css">
+</head>
+
+<body>
+    <form action="Password_login.php" method="post">
+        <div class="container">
+            <div class="logo-and-name">
+                <h1>BlogSite-Manager</h1><br>
+            </div>
+
+            <div class="greeting">
+                <h2>Log in to your account</h2><br>
+            </div>
+
+            <div class="infos">
+                <div class="form">
+                    <input type="text" placeholder="Username" name="username" id="username" required><br>
+                    <input type="password" placeholder="Password" name="username" id="password" required><br>
+                </div>
+            </div>
+            <div class="user-type">
+                <label for="manager">
+                    <input class="rdio" type="radio" id="manager" name="radio" required checked>
+                    <span class="type-radio"></span>
+                    <span>Manager</span>
+                </label>
+                <label for="customer">
+                    <input class="rdio" type="radio" id="customer" name="radio" required>
+                    <span class="type-radio"></span>
+                    <span>Customer</span>
+                </label>
+            </div>
+            <div class="infos">
+                <button type="submit" class="btn" href="homepage.html"> Log in</button>
+                <div class="signup">
+                    <p>Don't have an account?<a href="registration.html"> Sign up</a></p>
+                </div>
+            </div>
+        </div>
+
+    </form>
+</body>
+
+</html>

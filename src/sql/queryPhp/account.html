@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title> Account | BlogSite Manager</title>
+    <link rel="stylesheet" href="stylesheet/homepage-view.css">
+    <style>
+        .home {
+            color: rgb(29, 161, 242);
+            font-size: 1em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="top-bar">
+            <ul class="nav-bar" role="navigation">
+                <li><a class="home" href="customer.html">home</a></li>
+                <li class="logo-name"><a href="account.html">BlogSite-Manager</a></li>
+            </ul>
+        </div>
+        <div class="guide-bar">
+            <ul class="gud-bar" role="navigation">
+                <li class="tools">
+                    <p>Tools</p>
+                </li>
+                <li class="results">
+                    <p>Results</p>
+                </li>
+            </ul>
+        </div>
+        <div class="wrapper">
+            <div class="left">
+                <div class="left-middle-up">
+                    <p class="general-heading" style="font-size: 1.4em">Basic Tools</p>
+                    <div class="view-list">
+                        <button type="button" class="view-btn"> Reset </button>
+                        <button type="button" class="view-btn"> Basic Data </button>
+                        <button type="button" class="view-btn"> Show all Posts</button><br>
+                    </div>
+
+                    <div class="show-by-filter">
+
+                        <p class="general-heading" style="font-size: 1.4em">Filters</p>
+
+                        <div class="dp-type">
+                            <label class="general-sub-heading">Type </label>
+                            <div class="dp-type-select">
+                                <select>
+                                    <option value="0">Select Post Type</option>
+                                    <option value="1">General Posts</option>
+                                    <option value="2">Image-Only Posts</option>
+                                </select>
+                                <button type="submit" class="type-select-btn"> show </button>
+                            </div>
+
+                            <label class="general-sub-heading"> Quantity of Likes </label>
+                            <div class="dp-type-select">
+                                <select>
+                                    <option value="0"> Quantity of Likes:</option>
+                                    <option value="1">0 - 49</option>
+                                    <option value="2">50 - 199</option>
+                                    <option value="3">200 - 999</option>
+                                    <option value="4">1000 - 9999</option>
+                                    <option value="5"> More than 10k </option>
+                                </select>
+                                <button type="submit" class="type-select-btn"> show </button>
+                            </div>
+
+                            <label class="general-sub-heading"> Quantity of Comments </label>
+                            <div class="dp-type-select">
+                                <select>
+                                    <option value="0">Quantity of Comments:</option>
+                                    <option value="1">0 - 9</option>
+                                    <option value="2">10 - 49</option>
+                                    <option value="3"> More than 50 </option>
+                                </select>
+                                <button type="submit" class="type-select-btn"> show </button>
+                            </div>
+
+                            <label class="general-sub-heading"> Quantity of Reposts: </label>
+                            <div class="dp-type-select">
+                                <select>
+                                    <option value="0">Quantity of Reposts:</option>
+                                    <option value="1">0 - 9</option>
+                                    <option value="2">10 - 49</option>
+                                    <option value="3">50 - 199</option>
+                                    <option value="4">200 - 999</option>
+                                    <option value="5"> More than 1k </option>
+                                </select>
+                                <button type="submit" class="type-select-btn"> show </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="left-middle-bottom">
+
+                    <label class="general-heading" style="font-size: 1.4em">General Search</label>
+
+                    <div class="search-related">
+                        <input type="text" placeholder="Post Title" name="post-title" class="search-box">
+                        <button type="submit" class="search-btn">Search</button>
+                    </div>
+
+                    <label class="general-heading" style="font-size: 1.4em"> Advanced Search:</label>
+
+                    <label class="general-sub-heading">Search by Post ID</label>
+                    <div class="search-related">
+                        <input type="text" placeholder="Post ID" name="post-id" class="search-box">
+                        <button type="submit" class="search-btn">Search</button>
+                    </div>
+
+                    <label class="general-sub-heading">Search by Tag ID</label>
+                    <div class="search-related">
+                        <input type="text" placeholder="Tag ID" name="tag-id" class="search-box">
+                        <button type="submit" class="search-btn">Search</button>
+                    </div>
+
+                    <label class="general-sub-heading">Search by Tag Name</label>
+                    <div class="search-related">
+                        <input type="text" placeholder="Tag Name" name="tag-name" class="search-box">
+                        <button type="submit" class="search-btn">Search</button>
+                    </div>
+
+                </div>
+
+                <div class="left-bottom">
+
+                    <label class="general-heading" style="font-size: 1.4em">
+                        Edit Account's Content:
+                    </label>
+
+                    <label class="general-sub-heading"> Enter Post ID </label>
+                    <div class="edit">
+                        <input type="text" placeholder="Post ID" name="customerid" id="usrid-box">
+                        <button type="submit" class="search-btn">Confirm</button>
+                    </div>
+
+                    <label class="general-sub-heading"> Edit Post title </label>
+                    <div class="edit">
+                        <input type="text" placeholder="New Post Title" name="location">
+                        <button type="submit" class="search-btn">Submit</button>
+                    </div>
+
+                    <label class="general-sub-heading"> Edit Post Name (if applicable) </label>
+                    <div class="edit">
+                        <input type="text" placeholder="New Post Name" name="username">
+                        <button type="submit" class="search-btn">Submit</button>
+                    </div>
+
+                    <label class="general-sub-heading">Delete Post</label>
+                    <div class="delete">
+                        <button type="submit" class="search-btn">Delete</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right">
+                <div class="right-mb">
+                    <div class="results">
+                        <p>
+                            Results.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
